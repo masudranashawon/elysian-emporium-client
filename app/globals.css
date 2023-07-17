@@ -10,3 +10,16 @@
 .section-padding {
   @apply py-10 md:py-20;
 }
+
+/* LINE STYLE */
+.link-item {
+  @apply relative;
+}
+
+.link-item::after {
+  @apply content-[""] absolute bottom-0 left-1/2 w-0 h-[1px] bg-dark -translate-x-1/2 duration-300;
+}
+
+.link-item:hover::after {
+  @apply w-full;
+}
